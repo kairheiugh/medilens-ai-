@@ -1,0 +1,59 @@
+{
+  "dataset_type": "synthetic educational data; not real patient data",
+  "random_state": 42,
+  "rows_total": 1800,
+  "train_rows": 1350,
+  "test_rows": 450,
+  "features": [
+    "age_years",
+    "sex_code_demo",
+    "hemoglobin_g_dl",
+    "rbc_million_uL",
+    "mcv_fL",
+    "mch_pg",
+    "hematocrit_percent"
+  ],
+  "target": "demo_label_anemia_pattern",
+  "accuracy": 0.9422,
+  "precision": 0.939,
+  "recall": 0.9059,
+  "f1": 0.9222,
+  "confusion_matrix_labels_0_1": [
+    [
+      270,
+      10
+    ],
+    [
+      16,
+      154
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9440559440559441,
+      "recall": 0.9642857142857143,
+      "f1-score": 0.9540636042402827,
+      "support": 280.0
+    },
+    "1": {
+      "precision": 0.9390243902439024,
+      "recall": 0.9058823529411765,
+      "f1-score": 0.9221556886227545,
+      "support": 170.0
+    },
+    "accuracy": 0.9422222222222222,
+    "macro avg": {
+      "precision": 0.9415401671499233,
+      "recall": 0.9350840336134454,
+      "f1-score": 0.9381096464315186,
+      "support": 450.0
+    },
+    "weighted avg": {
+      "precision": 0.9421551348380616,
+      "recall": 0.9422222222222222,
+      "f1-score": 0.9420095027847722,
+      "support": 450.0
+    }
+  },
+  "warning": "These metrics measure agreement with synthetic labels only and do not estimate clinical performance."
+}
