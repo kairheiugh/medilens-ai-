@@ -6,8 +6,8 @@ import pandas as pd
 import streamlit as st
 
 ROOT = Path(__file__).parent
-MODEL_PATH = ROOT / "models" / "medilens_model.joblib"
-METRICS_PATH = ROOT / "models" / "metrics.json"
+MODEL_PATH = ROOT / "medilens_model.joblib"
+METRICS_PATH = ROOT / "metrics.json"
 
 st.set_page_config(page_title="MediLens AI", page_icon="🧬", layout="wide", initial_sidebar_state="expanded")
 
@@ -152,7 +152,7 @@ elif page == "Данные и ограничения":
 **Безопасное использование**
 Используйте только для изучения программирования, обработки данных и оценки классификаторов. При вопросах о реальных анализах обращайтесь к квалифицированному медицинскому специалисту.
 """)
-    st.download_button("Скачать демонстрационный CSV", data=(ROOT/"data"/"demo_synthetic_blood_data.csv").read_bytes(), file_name="demo_synthetic_blood_data.csv", mime="text/csv")
+    st.download_button("Скачать демонстрационный CSV", data=(ROOT/"demo_synthetic_blood_data.csv").read_bytes(), file_name="demo_synthetic_blood_data.csv", mime="text/csv")
 
 st.divider()
 st.caption("MediLens AI · Учебный прототип · Не медицинское изделие · Не использовать для диагностики")
